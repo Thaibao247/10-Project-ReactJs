@@ -1,30 +1,92 @@
-import AnchorIcon from '@mui/icons-material/Anchor';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Link, { NavLink } from 'react-router-dom'
-export default function Header() {
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+import { Link, NavLink } from "react-router-dom";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+  link: {
+    textDecoration: "none",
+    color: "white",
+  },
+}));
+
+const pages = [
+  {
+    name: "Grocery",
+    url: "/grocery",
+  },
+  {
+    name: "BirthDay",
+    url: "/birthday",
+  },
+  {
+    name: "Tours",
+    url: "/tour",
+  },
+  {
+    name: "Reviews",
+    url: "/review",
+  },
+  {
+    name: "Tab",
+    url: "/tab",
+  },
+  {
+    name: "Slide",
+    url: "/slide",
+  },
+  {
+    name: "LoremIpsum",
+    url: "/lorem",
+  },
+  {
+    name: "Color",
+    url: "/color",
+  },
+  {
+    name: "Accordion",
+    url: "/accordion",
+  },
+  {
+    name: "TodoDnd",
+    url: "/todo",
+  },
+];
+
+export default function ButtonAppBar() {
+  const classes = useStyles();
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-        <AnchorIcon className='icon-header'/>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link to="/"> TB SHOP </Link>
+          <AcUnitIcon className={classes.menuButton} />
+          <Typography variant="h6" className={classes.title}>
+            <Link className={classes.link} to="/grocery">
+              TNTB
+            </Link>
           </Typography>
-          
-          <NavLink to="/todos">
-            <Button color="inherit">Todo</Button>
-          </NavLink>
-         
-          <NavLink to="/albums">
-            <Button color="inherit">Albums</Button>
-          </NavLink>
-          <Button color="inherit">Register</Button>
+          {pages.map((item) => (
+            <NavLink to={item.url} className={classes.link}>
+              {" "}
+              <Button color="inherit">{item.name}</Button>
+            </NavLink>
+          ))}
         </Toolbar>
       </AppBar>
-    </Box>
+    </div>
   );
 }
