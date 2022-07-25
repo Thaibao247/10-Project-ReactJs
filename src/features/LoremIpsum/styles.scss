@@ -1,0 +1,22 @@
+.lorem{
+    width: 90vw;
+    margin: 5rem auto;
+    max-width: 1170px;
+    .title{
+        text-align: center;
+    }
+    .form-lorem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            .label-lorem{
+                margin-right: 20px;
+            }
+            .input-lorem{
+                width: 50px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

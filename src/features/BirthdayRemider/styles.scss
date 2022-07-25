@@ -1,0 +1,29 @@
+.birthday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    padding: 50px;
+    .birthday-reminder{
+        width: 500px;
+        height: auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 10px;
+        .birthday-number{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        button{
+            width: 100%;
+            border-radius: 10px;
+            background-color: palevioletred;
+            height: 30px;
+            color:white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.tours{
+    .title{
+        width:150px;
+        margin: 0 auto;
+        &::before{
+            content: "";
+            width: 150px;
+            height:2px ;
+            background-color: red;
+            position: absolute;
+            top:40px;
+        }
+    }
+    &__list{
+        width: 500px;
+        margin:0 auto;
+        .tour-refresh{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:30px;
+            button{
+                width: 100px;
+                height: 40px;
+                border-radius: 5px;
+                border:1px solid blue;
+                cursor: pointer;
+                color: red;
+                background-color: white;
+            }
+        }
+        .tours-item{
+            background-color: aquamarine;
+            margin-top:30px;
+            border-radius: 5px;
+            & > img{
+                width: 100%;
+                object-fit: cover;
+                overflow: hidden;
+                height: 300px;
+            }
+            .tour-info{
+                padding: 20px;
+                &__title{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__des{
+                    span{
+                        cursor: pointer;
+                        color: red;
+                    }
+                }
+                &__remove{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:20px;
+                    button{
+                        width: 300px;
+                        height: 30px;
+                        text-align: center;
+                        cursor: pointer;
+                        color:red;
+                        background-color: white ;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+        }
+    }
+
+}

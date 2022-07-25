@@ -1,0 +1,59 @@
+.tab{
+   
+    .title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__category{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btn-category{
+            margin-bottom: 30px;
+            width: 150px;
+            border: transparent;
+            background-color: transparent;
+            font-weight: 500;
+            &:hover{
+                color: blue;    
+                box-shadow: -2px 0 blue;      
+            }
+        }
+        .job-active{
+            color: blue;    
+            box-shadow: -2px 0 blue;     
+        }
+    }
+    &__job{
+        .job-company{
+            width: 80px;
+            background-color: aquamarine;
+            padding: 3px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .job-date{
+            color:gray;
+            font-weight: 600;
+        }
+        .more-info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn-more{
+                margin-top:50px;
+                width: 200px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                border: transparent;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: aquamarine;
+                &:hover{
+                    border: 2px solid blue;
+                }
+            }
+        }
+    }
+}

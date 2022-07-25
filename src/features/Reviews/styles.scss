@@ -1,0 +1,36 @@
+.reviews{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .title{
+        &::before{
+            content: "";
+            width: 180px;
+            height:2px ;
+            background-color: red;
+            position: absolute;
+            top:70px;
+        }
+    }
+    .review-item{
+        width: 500px;
+        height: auto;
+        margin-top: 40px;
+        border: 1px solid red;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+    }
+}

@@ -1,0 +1,83 @@
+.grocery-wrapper{
+    width: 700px;
+    padding: 40px;
+    height: auto;
+    margin-top:200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px;
+    //border:2px solid;
+    display: flex;
+   // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .alert-add{
+        background-color: greenyellow;
+        font-weight: 700;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper{
+        .form{
+            .input-submit{
+            margin-right: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: transparent;
+            background-color: bisque;
+            &:focus{
+                outline: none;
+                }
+            }
+            .input-edit{
+                margin-right: 10px;
+                padding-left: 10px;
+                border-radius: 10px;
+                background-color: azure;
+            }
+         .btn-submit{
+            border: transparent;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+        }
+    }
+    .list-gro{
+        width: 400px;
+        margin-top:30px;
+        
+    }
+    .clear-all{
+        margin-top:30px;
+        color:red;
+        cursor: pointer;
+    }
+}
+.item-gro{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px;
+    margin-top:10px;
+    padding: 0 10px;
+    padding-top:10px;
+    p{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &:hover{
+        background-color: bisque;
+    }
+    .edit-delete{
+        button{
+            border: transparent;
+        }
+        .btn-edit{
+            margin-right: 4px;
+            color:green;
+        }
+        .btn-delete{
+            color:red;
+        }
+    }
+}
