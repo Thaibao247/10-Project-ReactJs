@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Draggable } from "react-beautiful-dnd";
 import { AiTwotoneDelete } from "react-icons/ai";
-import { BiEdit } from "react-icons/bi";
-import "/col";
+import "./Column.scss";
 function Column(props) {
   const { item, index, columnId, handleDeleteItem } = props;
   return (
@@ -28,9 +27,6 @@ function Column(props) {
           >
             <p>{item.content}</p>
             <div className="edit-delete">
-              <button className="btn-edit" onClick={() => ""}>
-                <BiEdit />
-              </button>
               <button
                 className="btn-delete"
                 onClick={() => {
