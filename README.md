@@ -4,7 +4,7 @@
 
 ## Demo:
 
-tntb-15project-reactJs.surge.sh
+https://tntb-15project-reactjs.surge.sh/todo
 
 ### `npm start`
 
