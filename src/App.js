@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Redirect exact from="/" to="/grocery" />
+        <Redirect exact from="/" to="/todo" />
         <Route path="/grocery" component={GroceryBud} />
         <Route path="/birthDay" component={Birthday} />
         <Route path="/tour" component={TourReminder} exact />

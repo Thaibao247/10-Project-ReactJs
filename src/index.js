@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { DragDropContext } from "react-beautiful-dnd";
+// import { DragDropContext } from "react-beautiful-dnd";
 import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <DragDropContext>
-        <App />
-      </DragDropContext>
+      {/* <DragDropContext> */}
+      <App />
+      {/* </DragDropContext> */}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

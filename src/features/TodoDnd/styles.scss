@@ -1,0 +1,47 @@
+.todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    .form-wrapper{
+        margin-bottom: 50px;
+        .form{
+            .input-todo{
+            margin-right: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+            border: transparent;
+            background-color: bisque;
+            &:focus{
+                outline: none;
+                }
+            }
+         .btn-submit{
+            border: transparent;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+        }
+    }
+    .todo-dnd{
+        display: flex;
+        .dnd-wrapper{
+            
+            &__item{
+                margin:8px;
+                
+            }
+            &__title{
+                text-align: center;
+            }
+            .column{
+                border-radius: 10px;
+                padding: 20px;
+                width: 250px;
+            }
+          
+        }
+    }
+
+}
